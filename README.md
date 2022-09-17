@@ -1,4 +1,4 @@
-# Challenger Front-end: AluraBooks
+# AluraBooks
 
 Este repositório faz parte do curso de HTML e CSS: responsividade com mobile-first elaborado pela escola de tecnologia Alura.
 
