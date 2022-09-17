@@ -1,0 +1,52 @@
+.cabecalho {
+  background-color: var(--cor-branca);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__icones {
+  padding: 1rem;
+}
+
+.menu__lista {
+  display: none;
+}
+
+.container__botao {
+  display: none;
+}
+
+/* Condicional que exibira o menu hamburguer 
+pegando pela id="menu".
+*/
+#menu:checked~.menu__lista {
+  display: block;
+  position: absolute;
+  top: 100%;
+
+  background-color: var(--cor-branca);
+  width: 18rem;
+}
+
+.lista__titulo {
+  padding: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-fonte-laranja);
+}
+
+.lista__item {
+  padding: 1.5rem;
+}
+
+.lista__item-link {
+  text-decoration: none;
+  color: var(--cor-fonte-azul);
+  font-weight: 400;
+  text-transform: uppercase;
+}

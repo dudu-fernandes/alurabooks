@@ -8,11 +8,40 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Alura Book</title>
+  <title>AluraBooks</title>
 </head>
 
 <body>
-  <h1>Alurabooks</h1>
+  <header class="cabecalho">
+    <div class="container">
+      <input type="checkbox" class="container__botao" id="menu">
+      <label for="menu">
+        <span class="cabecalho__menu-hamburguer"><img src="./assets/img/icones/icon-menu-hamburguer.svg" alt="Menu lateral" class="cabecalho__icones"></span>
+      </label>
+      <ul class="menu__lista">
+        <li class="lista__titulo">Categorias</li>
+        <li class="lista__item"><a class="lista__item-link" href="#">Programação</a></li>
+        <li class="lista__item"><a class="lista__item-link" href="#">Front-end</a></li>
+        <li class="lista__item"><a class="lista__item-link" href="#">Infraestrutura</a></li>
+        <li class="lista__item"><a class="lista__item-link" href="#">Bussines</a></li>
+        <li class="lista__item"><a class="lista__item-link" href="#">Design & UX</a></li>
+      </ul>
+      <a href="#">
+        <img src="./assets/img/icones/icon-logotipo-alurabooks.svg" alt="Logo Alurabooks" class="cabecalho__icones">
+      </a>
+    </div>
+    <div class="container">
+      <a href="#">
+        <img src="./assets/img/icones/icon-coracao.svg" alt="Itens favoritos" class="cabecalho__icones">
+      </a>
+      <a href="#">
+        <img src="./assets/img/icones/icon-sacola.svg" alt="Sacola de produtos" class="cabecalho__icones">
+      </a>
+      <a href="#">
+        <img src="./assets/img/icones/icon-imagem-perfil.svg" alt="Perfil do usuário" class="cabecalho__icones">
+      </a>
+    </div>
+  </header>
 </body>
 
 </html>

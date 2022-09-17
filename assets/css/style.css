@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("./cabecalho.css");
+
 :root {
   --cor-de-fundo: #EBECEE;
+  --cor-branca: #FFF;
+  --cor-fonte-azul: #002F52;
+  --cor-fonte-laranja: #EB9B00;
 }
 
 body {
   background-color: var(--cor-de-fundo);
+  font-family: 'Poppins', sans-serif;
 }
