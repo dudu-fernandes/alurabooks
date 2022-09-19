@@ -31,13 +31,13 @@ pegando pela id="menu".
   top: 100%;
 
   background-color: var(--cor-branca);
-  width: 18rem;
+  width: 70vw;
 }
 
 .lista__titulo {
   padding: 1.5rem;
   font-weight: 700;
-  color: var(--cor-fonte-laranja);
+  color: var(--cor-laranja);
 }
 
 .lista__item {
@@ -46,7 +46,10 @@ pegando pela id="menu".
 
 .lista__item-link {
   text-decoration: none;
-  color: var(--cor-fonte-azul);
+  color: var(--cor-azul-gradiente);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 400;
   text-transform: uppercase;
 }
+

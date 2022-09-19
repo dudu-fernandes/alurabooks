@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url("./cabecalho.css");
+@import url("./banner.css");
+@import url("./carrossel.css");
 
 :root {
   --cor-de-fundo: #EBECEE;
   --cor-branca: #FFF;
-  --cor-fonte-azul: #002F52;
-  --cor-fonte-laranja: #EB9B00;
+  --cor-azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --cor-laranja: #EB9B00;
+  --fonte-principal: 'Poppins', sans-serif;
+
+  --icone-pesquisa: url("./assets/img/icones/icon-search.svg");
 }
 
 body {
   background-color: var(--cor-de-fundo);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
