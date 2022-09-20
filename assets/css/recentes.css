@@ -1,0 +1,30 @@
+.recentes {
+    background: var(--cor-azul-gradiente);
+    color: var(--cor-branca);
+
+    padding: 1em .5em 1em .5em;
+}
+
+.recentes__titulo {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin: .5em 0;
+}
+
+.recentes__topicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 1em .5em 1em;
+}
+
+.topicos {
+    background-color: var(--cor-laranja);
+    padding: 1em;
+    margin: .5em;
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 14px;
+    font-weight: 700;
+}

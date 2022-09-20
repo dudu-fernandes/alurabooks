@@ -2,11 +2,18 @@
 @import url("./cabecalho.css");
 @import url("./banner.css");
 @import url("./carrossel.css");
+@import url("./card.css");
+@import url("./recentes.css");
+@import url("./info-email.css");
+@import url("./rodape.css");
 
 :root {
   --cor-de-fundo: #EBECEE;
   --cor-branca: #FFF;
+  --cor-branca-2: #F9F9F9;
+  --cor-cinza: #858585;
   --cor-azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --cor-azul: #002F52;
   --cor-laranja: #EB9B00;
   --fonte-principal: 'Poppins', sans-serif;
 

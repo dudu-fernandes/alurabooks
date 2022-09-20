@@ -1,0 +1,31 @@
+.info-email {
+    background-color: var(--cor-branca);
+    padding: 1em;
+}
+
+.info-email__titulo { 
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--cor-azul-gradiente);
+    background-clip: text;
+    margin: 1em;
+}
+
+.info-email__texto {
+    font-size: 16px;
+    font-weight: 300;
+    background: var(--cor-azul-gradiente);
+    background-clip: text;
+    margin: 1em;
+}
+
+.info-email__email {
+    border-color: var(--cor-azul);
+    margin: 0 1em 2em 1em;
+}
+
+.info-email__email::placeholder {
+    background: url("../img/icones/icon-email.svg") no-repeat;
+    background-position: 2em;
+    color: var(--cor-azul);
+}
