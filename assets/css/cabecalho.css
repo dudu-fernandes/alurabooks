@@ -17,7 +17,8 @@
 .container__botao,
 .menu__lista,
 .container__logo,
-.menu__lista--desktop {
+.menu__lista--desktop,
+.cabecalho__item--desktop {
   display: none;
 }
 
@@ -94,5 +95,23 @@ pegando pela id="menu".
 
   .menu__lista {
     margin-left: 28vw;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .cabecalho {
+    justify-content: space-around;
+  }
+
+  .cabecalho__item--desktop {
+    display: block;
+    margin: 0;
+
+    color: var(--cor-preta);
+    font-weight: 400;
+  }
+
+  .cabecalho__icones {
+    padding: 0;
   }
 }

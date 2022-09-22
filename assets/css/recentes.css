@@ -40,3 +40,9 @@
         margin-top: 1em;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .recentes {
+        padding: 1em 20em 1em 20em;
+    }
+}

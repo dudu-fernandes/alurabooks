@@ -44,10 +44,19 @@
   font-weight: 400;
 }
 
+.descricao__imagem {
+  margin: 1em;
+}
+
 .card__botoes {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: .5em;
+}
+
+.botao__saiba-mais {
+  padding: 2em;
+  margin: 1em;
 }
 
 .botoes__lista {
@@ -77,5 +86,27 @@
   .card {
     width: 50vw;
     margin: 1em 0 3em 24vw;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .card {
+    height: 25%;
+    width: 30%;
+    margin: 4em 5em 0 0;
+  }
+
+  .descricao__titulo,
+  .descricao__titulo--avaliacao {
+    font-size: 32px;
+  }
+
+  .descricao__texto,
+  .descricao__titulo-livro {
+    font-size: 18px;
+  }
+
+  .descricao__texto {
+    font-size: 16px;
   }
 }
