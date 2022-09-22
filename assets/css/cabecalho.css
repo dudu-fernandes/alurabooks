@@ -14,11 +14,10 @@
   padding: 1rem;
 }
 
-.menu__lista {
-  display: none;
-}
-
-.container__botao {
+.container__botao,
+.menu__lista,
+.container__logo,
+.menu__lista--desktop {
   display: none;
 }
 
@@ -53,3 +52,47 @@ pegando pela id="menu".
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    justify-content: space-evenly;
+  }
+
+  .container__logo {
+    display: block;
+    font-family: var(--fonte-logo);
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .logo__negrito {
+    font-weight: 700;
+  }
+
+  .menu__lista--desktop {
+    display: flex;
+  }
+
+  .lista__item-link {
+    color: var(--cor-preta);
+    font-weight: 400;
+  }
+
+
+  .cabecalho__menu-hamburguer,
+  .icone--favoritos {
+    display: none;
+  }
+
+  #menu:checked~.menu__lista {
+    background-color: var(--cor-branca);
+    width: auto;
+  }
+
+  .lista__titulo {
+    display: none;
+  }
+
+  .menu__lista {
+    margin-left: 28vw;
+  }
+}

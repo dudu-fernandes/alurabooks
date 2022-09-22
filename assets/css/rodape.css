@@ -3,3 +3,49 @@
     background-color: var(--cor-branca-2);
     border-top: 2px solid var(--cor-cinza);
 }
+
+.rodape__detalhado {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 2em 1em 2em;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+    .rodape__detalhado {
+        display: flex;
+    }
+
+    .detalhado__educacao,
+    .detalhado__educacao-online,
+    .detalhado__comunidade {
+        margin-right: 2em;
+    }
+
+    .detalhado__titulo {
+        color: var(--cor-cinza);
+    }
+
+    .detalhado__lista {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens__lista {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        margin: 1em;
+        text-decoration: none;
+        color: var(--cor-cinza-escuro);
+    }
+}

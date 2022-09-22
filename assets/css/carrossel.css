@@ -1,24 +1,57 @@
 .carrossel__titulo {
-    background-color: var(--cor-branca);
-    color: var(--cor-laranja);
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+	background-color: var(--cor-branca);
+	color: var(--cor-laranja);
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
 
-    padding: 1em 0 0.5em 0;
+	padding: 1em 0 .5em 0;
 }
 
 .swiper-pagination {
-    position: initial;
-    margin: .5em;
+	position: initial;
+	margin: .5em;
 }
 
 .swiper-slide img {
-    width: 100%;
+	width: 100%;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    display: none;
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.carrossel__titulo {
+		font-size: 26px;
+
+		padding: 2em 0 1em 0;
+	}
+
+	.swiper {
+		width: 60%;
+		padding: 1em 3em;
+	}
+
+	.swiper-pagination {
+		margin-bottom: 3em;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: block;
+		margin-top: .8em;
+	}
+
+	.swiper-button-prev::after {
+		content: url("../img/FAB.svg");
+		float: left;
+	}
+	
+	.swiper-button-next::after {
+		content: url("../img/FAB-1.svg");
+		float: right;
+	}
 }

@@ -8,10 +8,6 @@
   border-radius: 15px;
 }
 
-.card__avaliacao {
-  background: url("../img/icones/icon-star.svg") no-repeat;
-}
-
 .card__descricao,
 .card__botoes {
   width: 100%;
@@ -32,7 +28,7 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--cor-laranja);
-  margin-top: 2em;
+  margin: 1em 0;
 }
 
 .descricao__titulo-livro {
@@ -46,10 +42,6 @@
 .descricao__texto {
   font-size: 14px;
   font-weight: 400;
-}
-
-.descricao__imagem {
-  margin-left: .5em;
 }
 
 .card__botoes {
@@ -79,4 +71,11 @@
   text-decoration: none;
 
   padding: 1em 2.18em;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 50vw;
+    margin: 1em 0 3em 24vw;
+  }
 }

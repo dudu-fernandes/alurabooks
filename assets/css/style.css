@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 @import url("./cabecalho.css");
 @import url("./banner.css");
 @import url("./carrossel.css");
 @import url("./card.css");
 @import url("./recentes.css");
-@import url("./info-email.css");
+@import url("./contato.css");
 @import url("./rodape.css");
 
 :root {
@@ -12,10 +13,13 @@
   --cor-branca: #FFF;
   --cor-branca-2: #F9F9F9;
   --cor-cinza: #858585;
+  --cor-cinza-escuro: #474646;
   --cor-azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   --cor-azul: #002F52;
   --cor-laranja: #EB9B00;
+  --cor-preta: #000000;
   --fonte-principal: 'Poppins', sans-serif;
+  --fonte-logo: 'Josefin Sans', sans-serif;
 
   --icone-pesquisa: url("./assets/img/icones/icon-search.svg");
 }
