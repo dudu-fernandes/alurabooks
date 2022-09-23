@@ -18,11 +18,9 @@
     <div class="container">
       <input type="checkbox" class="container__botao" id="menu">
       <label class="menu-hamburguer" for="menu">
-        <span class="cabecalho__menu-hamburguer">
-          <img src="./assets/img/icones/icon-menu-hamburguer.svg" alt="Menu lateral" class="cabecalho__icones">
-        </span>
+        <span class="cabecalho__menu-hamburguer"></span>
       </label>
-      <ul class="menu__lista">
+      <ul class="submenu__lista">
         <li class="lista__titulo">Categorias</li>
         <li class="lista__item"><a class="lista__item-link" href="#">Programação</a></li>
         <li class="lista__item"><a class="lista__item-link" href="#">Front-end</a></li>
@@ -37,12 +35,19 @@
     </div>
     <div class="container">
       <ul class="menu__lista--desktop">
-        <input type="checkbox" class="container__botao" id="menu">
-        <label for="menu">
-          <li class="lista__item">CATEGORIAS</li>
+        <input type="checkbox" class="container__botao" id="menu--desktop">
+        <label for="menu--desktop" class="menu__rotulo">
+          <li class="lista__item--desktop">CATEGORIAS</li>
         </label>
-        <li class="lista__item"><a href="#" class="lista__item-link">Favoritos</a></li>
-        <li class="lista__item"><a href="#" class="lista__item-link">Minha estante</a></li>
+          <ul class="submenu__lista--desktop">
+            <li class="lista__item"><a class="lista__item-link" href="#">Programação</a></li>
+            <li class="lista__item"><a class="lista__item-link" href="#">Front-end</a></li>
+            <li class="lista__item"><a class="lista__item-link" href="#">Infraestrutura</a></li>
+            <li class="lista__item"><a class="lista__item-link" href="#">Bussines</a></li>
+            <li class="lista__item"><a class="lista__item-link" href="#">Design & UX</a></li>
+          </ul>
+        <li class="lista__item--desktop">Favoritos</li>
+        <li class="lista__item--desktop">Minha estante</li>
       </ul>
     </div>
     <div class="container">

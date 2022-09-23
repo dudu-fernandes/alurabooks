@@ -16,17 +16,24 @@
     }
 
     .rodape__titulo {
+        text-align: center;
         font-size: 24px;
+        width: 30%;
     }
 
     .rodape__detalhado {
         display: flex;
+        justify-content: center;
+        width: 70%;
     }
 
     .detalhado__educacao,
     .detalhado__educacao-online,
     .detalhado__comunidade {
-        margin-right: 2em;
+        border-left: 1px solid var(--cor-cinza);
+        padding-left: 1em;
+
+        margin-right: 5em;
     }
 
     .detalhado__titulo {

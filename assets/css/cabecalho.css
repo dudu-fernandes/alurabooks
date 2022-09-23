@@ -11,11 +11,11 @@
 }
 
 .cabecalho__icones {
-  padding: 1rem;
+  padding: 1rem .5em;
 }
 
 .container__botao,
-.menu__lista,
+.submenu__lista,
 .container__logo,
 .menu__lista--desktop,
 .cabecalho__item--desktop {
@@ -25,7 +25,26 @@
 /* Condicional que exibira o menu hamburguer 
 pegando pela id="menu".
 */
-#menu:checked~.menu__lista {
+
+.cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icones/icon-menu-hamburguer.svg") no-repeat center;
+  display: inline-block;
+  padding: 1em 2em;
+}
+
+.container__botao:checked~.menu-hamburguer>.cabecalho__menu-hamburguer {
+  background-image: url("../img/icones/icon-menu-hamburguer-branco.svg");
+  margin-top: .5em;
+}
+
+.container__botao:checked~.menu-hamburguer {
+  background: var(--cor-azul-gradiente) no-repeat center;
+  height: 100%;
+}
+
+#menu:checked~.submenu__lista {
   display: block;
   position: absolute;
   top: 100%;
@@ -54,6 +73,14 @@ pegando pela id="menu".
 }
 
 @media screen and (min-width: 1024px) {
+  .cabecalho__menu-hamburguer,
+  .submenu__lista--desktop,
+  .icone--favoritos,
+  .lista__titulo,
+  #menu:checked~.submenu__lista {
+    display: none;
+  }
+  
   .cabecalho {
     justify-content: space-evenly;
   }
@@ -73,28 +100,38 @@ pegando pela id="menu".
     display: flex;
   }
 
-  .lista__item-link {
-    color: var(--cor-preta);
+  .lista__item--desktop {
+    padding: 3rem 1em;
+  }
+
+  .lista__item--desktop,
+  .lista__item {
+    text-decoration: none;
+    color: var(--cor-azul-gradiente);
+    -webkit-background-clip: text;
+    background-clip: text;
     font-weight: 400;
+    text-transform: uppercase;
   }
 
-
-  .cabecalho__menu-hamburguer,
-  .icone--favoritos {
-    display: none;
+  .lista__item--desktop:hover,
+  .lista__item:hover {
+    background: var(--cor-azul-gradiente);
+    color: var(--cor-branca);
+  }
+ 
+  #menu--desktop:checked~.menu__rotulo > .lista__item--desktop {
+    background: var(--cor-azul-gradiente);
+    color: var(--cor-branca);
   }
 
-  #menu:checked~.menu__lista {
+  #menu--desktop:checked~.submenu__lista--desktop {
+    display: block;
+    position: absolute;
+    top: 100%;
+
     background-color: var(--cor-branca);
     width: auto;
-  }
-
-  .lista__titulo {
-    display: none;
-  }
-
-  .menu__lista {
-    margin-left: 28vw;
   }
 }
 
@@ -114,4 +151,5 @@ pegando pela id="menu".
   .cabecalho__icones {
     padding: 0;
   }
+
 }
